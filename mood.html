@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mood Based Coffee Selector</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6f4e37, #c4a484);
+            text-align: center;
+            padding-top: 80px;
+            color: white;
+        }
+
+        h1{
+            font-size: 40px;
+        }
+
+        button{
+            padding: 15px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            transform: scale(1.1);
+        }
+
+        #result{
+            margin-top: 40px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>☕ Choose Your Mood</h1>
+
+<button onclick="recommendCoffee('sleepy')">😴 Sleepy</button>
+<button onclick="recommendCoffee('studying')">📚 Studying</button>
+<button onclick="recommendCoffee('working')">💻 Working</button>
+<button onclick="recommendCoffee('relaxed')">🧘 Relaxed</button>
+
+<div id="result"></div>
+
+<script>
+function recommendCoffee(mood){
+
+    let coffee = "";
+
+    if(mood === "sleepy"){
+        coffee = "⚡ Espresso — Strong and perfect to wake you up!";
+    }
+    else if(mood === "studying"){
+        coffee = "📖 Cappuccino — Balanced coffee to keep your focus steady.";
+    }
+    else if(mood === "working"){
+        coffee = "💼 Americano — Smooth and long-lasting energy.";
+    }
+    else if(mood === "relaxed"){
+        coffee = "🌿 Latte — Light, creamy, and comforting.";
+    }
+
+    document.getElementById("result").innerHTML = 
+        "👉 Recommended Coffee: <br><br>" + coffee;
+}
+</script>
+
+</body>
+</html>

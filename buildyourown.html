@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Build Your Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+            <nav>
+<h2>Cafe of Heaven ☕</h2>
+
+<div>
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="buildyourown.html">Build Your Own</a>
+<a href="mood.html">Mood</a>
+<a href="cart.html">Cart</a>
+<a href="login.html">Login</a>
+<a href="checkout.html">Contact</a>
+<a href="payment.html">Contact</a>
+<a href="contact.html">Contact</a>
+<a href="admin.html">Contact</a>
+
+</div>
+</nav>
+
+<section>
+<h2>Build Your Own Coffee ☕</h2>
+
+<form onsubmit="showMessage(); return false;">
+
+<label>Select Beans:</label>
+<select>
+    <option>Arabica</option>
+    <option>Robusta</option>
+</select>
+
+<label>Choose Milk:</label>
+<select>
+    <option>Whole Milk</option>
+    <option>Almond Milk</option>
+    <option>Oat Milk</option>
+</select>
+
+<label>Sugar Level:</label>
+<select>
+    <option>No Sugar</option>
+    <option>Low</option>
+    <option>Medium</option>
+    <option>High</option>
+</select>
+
+<label>Add Flavors:</label>
+<select>
+    <option>Vanilla</option>
+    <option>Caramel</option>
+    <option>Hazelnut</option>
+</select>
+
+<label>Pick Size:</label>
+<select>
+    <option>Small</option>
+    <option>Medium</option>
+    <option>Large</option>
+</select>
+
+<br><br>
+<button type="submit">Create My Coffee</button>
+
+</form>
+
+<h3 id="message"></h3>
+
+</section>
+
+<script>
+function showMessage() {
+    document.getElementById("message").innerHTML =
+    "☕ Your Heavenly Coffee is Ready!";
+}
+</script>
+
+</body>
+</html>

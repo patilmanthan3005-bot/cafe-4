@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cafe of Heaven</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ✅ NAVBAR -->
+<nav>
+<h2>Cafe of Heaven ☕</h2>
+
+<div>
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="buildyourown.html">Build Your Own</a>
+<a href="mood.html">Mood</a>
+<a href="cart.html">Cart</a>
+<a href="login.html">Login</a>
+<a href="checkout.html">Checkout</a>
+<a href="payment.html">Payment</a>
+<a href="contact.html">Contact</a>
+<a href="admin.html">Admin</a>
+</div>
+</nav>
+
+
+<!-- ✅ MENU START -->
+<section id="menu" class="section">
+  <h2>🍽️ Our Menu</h2>
+
+  <div class="menu-grid">
+
+    <!-- ☕ COFFEE -->
+    <div class="item">
+      <img src="../images/espresso.jpg">
+      <h4>Espresso</h4>
+      <p>₹120</p>
+      <button onclick="addToCart('Espresso',120)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../images/cappuccino.jpg">
+      <h4>Cappuccino</h4>
+      <p>₹150</p>
+      <button onclick="addToCart('Cappuccino',150)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../images/latte.jpg">
+      <h4>Latte</h4>
+      <p>₹170</p>
+      <button onclick="addToCart('Latte',170)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../images/mocha.jpg">
+      <h4>Mocha</h4>
+      <p>₹180</p>
+      <button onclick="addToCart('Mocha',180)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../images/cold-coffee.jpg">
+      <h4>Cold Coffee</h4>
+      <p>₹160</p>
+      <button onclick="addToCart('Cold Coffee',160)">Add to Cart</button>
+    </div>
+
+    <!-- 🥐 PASTRIES -->
+    <div class="item">
+      <img src="../images/croissant.jpg">
+      <h4>Chocolate Croissant</h4>
+      <p>₹90</p>
+      <button onclick="addToCart('Chocolate Croissant',90)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../images/butter-pastry.jpg">
+      <h4>Butter Pastry</h4>
+      <p>₹80</p>
+      <button onclick="addToCart('Butter Pastry',80)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../images/cheese-puff.jpg">
+      <h4>Cheese Puff</h4>
+      <p>₹100</p>
+      <button onclick="addToCart('Cheese Puff',100)">Add to Cart</button>
+    </div>
+
+    <!-- 🎂 CAKES -->
+    <div class="item">
+      <img src="../images/chocolate-cake.jpg">
+      <h4>Chocolate Truffle Cake</h4>
+      <p>₹220</p>
+      <button onclick="addToCart('Chocolate Truffle Cake',220)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../images/red-velvet.jpg">
+      <h4>Red Velvet Cake</h4>
+      <p>₹250</p>
+      <button onclick="addToCart('Red Velvet Cake',250)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../images/cheesecake.jpg">
+      <h4>Blueberry Cheesecake</h4>
+      <p>₹270</p>
+      <button onclick="addToCart('Blueberry Cheesecake',270)">Add to Cart</button>
+    </div>
+
+    <!-- 🍕 PIZZA -->
+    <div class="item">
+      <img src="../images/margherita-pizza.jpg">
+      <h4>Margherita Pizza</h4>
+      <p>₹280</p>
+      <button onclick="addToCart('Margherita Pizza',280)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../images/veg-pizza.jpg">
+      <h4>Veg Supreme Pizza</h4>
+      <p>₹320</p>
+      <button onclick="addToCart('Veg Supreme Pizza',320)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../images/cheese-pizza.jpg">
+      <h4>Cheese Burst Pizza</h4>
+      <p>₹350</p>
+      <button onclick="addToCart('Cheese Burst Pizza',350)">Add to Cart</button>
+    </div>
+
+    <!-- 🍔 BURGERS -->
+    <div class="item">
+      <img src="../images/veg-burger.jpg">
+      <h4>Classic Veg Burger</h4>
+      <p>₹180</p>
+      <button onclick="addToCart('Classic Veg Burger',180)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../images/cheese-burger.jpg">
+      <h4>Cheese Burger</h4>
+      <p>₹220</p>
+      <button onclick="addToCart('Cheese Burger',220)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../images/paneer-burger.jpg">
+      <h4>Paneer Burger</h4>
+      <p>₹250</p>
+      <button onclick="addToCart('Paneer Burger',250)">Add to Cart</button>
+    </div>
+
+    <!-- 🎁 SOUVENIRS -->
+    <div class="item">
+      <img src="../images/coffee-mug.jpg">
+      <h4>Cafe of Heaven Mug</h4>
+      <p>₹299</p>
+      <button onclick="addToCart('Cafe of Heaven Mug',299)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../images/coffee-tumbler.jpg">
+      <h4>Reusable Coffee Tumbler</h4>
+      <p>₹399</p>
+      <button onclick="addToCart('Reusable Coffee Tumbler',399)">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="../images/keychain.jpg">
+      <h4>Café Logo Keychain</h4>
+      <p>₹149</p>
+      <button onclick="addToCart('Cafe Logo Keychain',149)">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ✅ CONNECT JAVASCRIPT -->
+<script src="../js/script.js"></script>
+
+</body>
+</html>

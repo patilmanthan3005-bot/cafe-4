@@ -1,0 +1,205 @@
+/* 🌿 GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ☕ BODY */
+body {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: #f6f2ee;            /* soft beige */
+  color: #3e2f25;                 /* coffee brown */
+  line-height: 1.6;
+}
+
+/* 🧁 HEADER */
+header {
+  background: linear-gradient(135deg, #6f4e37, #8b6a4f);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* ☁️ NAVIGATION */
+nav a {
+  color: #fdf8f4;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #f1e3d3;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #f1e3d3;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* 🪴 SECTIONS */
+.section {
+  background: #ffffff;
+  margin: 25px auto;
+  padding: 35px;
+  width: 90%;
+  max-width: 1100px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🌷 CENTER TEXT */
+.center {
+  text-align: center;
+}
+
+/* 🍽️ MENU GRID */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+/* 🍰 MENU ITEM CARD */
+.item {
+  background: #fbf8f5;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
+
+/* 🖼️ IMAGE */
+.item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+/* 🍩 ITEM TITLE */
+.item h4 {
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+/* 💰 PRICE */
+.item p {
+  font-weight: 600;
+  color: #6f4e37;
+}
+
+/* ☕ BUTTONS */
+button {
+  background: #6f4e37;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  margin-top: 10px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #5a3e2b;
+  transform: scale(1.05);
+}
+
+/* 🛒 CART */
+#cartItems li {
+  background: #f3ece6;
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 12px;
+  list-style: none;
+}
+
+/* 💳 INPUTS */
+input, select {
+  width: 100%;
+  max-width: 320px;
+  padding: 10px 14px;
+  margin: 10px 0;
+  border-radius: 25px;
+  border: 1px solid #d2c3b5;
+  font-size: 0.9rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #6f4e37;
+  box-shadow: 0 0 0 2px rgba(111,78,55,0.15);
+}
+
+/* 🧠 ADMIN PANEL */
+#admin {
+  background: linear-gradient(135deg, #f7efe8, #fff);
+}
+
+/* 🧾 FOOTER */
+footer {
+  background: #6f4e37;
+  color: #fdf8f4;
+  text-align: center;
+  padding: 15px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-top: 40px;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px;
+  }
+}
